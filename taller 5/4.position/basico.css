@@ -1,0 +1,19 @@
+#div-before,#div-after {
+	height: 50px;
+	background-color: #CFDFEE;
+}
+
+#div-1 {
+	background-color: #000000;
+	padding: 30px;
+}
+
+#div-1a {
+	background-color: #FF4D20;
+}
+#div-1b {
+	background-color: #008018;
+}
+#div-1c {
+	background-color: #D1B12C;
+}

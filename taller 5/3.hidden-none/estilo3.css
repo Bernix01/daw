@@ -1,0 +1,29 @@
+h1 {
+	text-align: center;
+	font-size: 3em;
+	font-family: 'Karma', serif;
+	color: #C1AFAB;
+}
+
+h2 {
+	color: #271E19;
+}
+
+video {
+	visibility: hidden;
+	display: none;
+
+	visibility: visible;
+	display: block;
+}
+
+article {
+	width: 50%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p {
+	text-align: justify;
+}

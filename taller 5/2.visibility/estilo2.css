@@ -1,0 +1,26 @@
+body {
+	background-image: url('golondrinas.jpg');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-color: #f1e6e4;
+}
+
+h1{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p {
+	width:30%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 0.6em;
+	font-weight: normal;
+}
+
+p#bloque2 {
+	visibility: visible;
+	/*visibility: hidden;*/
+}

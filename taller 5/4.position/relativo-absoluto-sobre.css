@@ -1,0 +1,19 @@
+#div-1 {
+     position:relative;
+}
+
+#div-1a {
+    position:absolute;
+    top: 123px;
+    right: 20px;
+    width: 70%;
+    z-index: -1;
+}
+
+#div-1b {
+    position: absolute;
+    top: 136px;
+    right: 60px;
+    width: 70%;
+    z-index: -2;
+}

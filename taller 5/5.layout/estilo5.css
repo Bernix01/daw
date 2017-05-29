@@ -1,0 +1,22 @@
+nav{
+  background-color: #192666;
+}
+nav ul{
+  padding-left: 7px;
+}
+nav ul li{
+  display: inline-block;
+  margin: 14px 2px 0;
+  background-color: #253575;
+  color: white;
+}
+nav ul li a{
+  padding: 10px 13px;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+nav ul li a.active{
+  background-color: white;
+  color: #ffbf78;
+}
