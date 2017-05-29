@@ -29,6 +29,13 @@ article{
   clear: both;
 }
 
+/* clearfix https://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use */
+article::after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
 ul{
   list-style-image: url('http://web-toolkit.global.sky.com/2.2.13-rc-v1/_site/static/font-svgs/carousel-play.svg');
 }
