@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+}
+
+.titulo {
+  text-align: center;
+}
+
+article figure,
+article section {
+  display: inline-block;
+}
+
+article figure {
+  width: 25%;
+  margin-right: 10px;
+}
+
+body>section {
+  max-width: 800px;
+  margin: 5px auto;
+  padding: 5px;
+  border: 1pt solid #cbccc1;
+}
+
+.habilidad {
+  background-color: #e0e0e0;
+  display: inline-block;
+  padding: 15px 20px 15px 0;
+  border-radius: 5000000px;
+  box-shadow: 1px 1px 5px grey;
+  margin: 0 10px;
+}
+
+.habilidad span {
+  background-color: #0d47a1;
+  border-radius: 50%;
+  color: white;
+  padding: 15px;
+}
