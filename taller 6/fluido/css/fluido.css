@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Metal;
+    src: url("../font/CloisterBlack.ttf");
+}
+
+header {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header > h1 {
+    font-size: 4.5em;
+    font-family: Metal;
+    font-weight: normal;
+}
+
+header > h1 > img#logo {
+    width: 1em;
+}
+
+header > h2 {
+    
+}
+
+header > nav {
+    background: #959597;
+}
+
+header > nav > p {
+    background: white;
+    margin: 0 auto;
+    width: 30%;
+}
+
+section article:first-child {
+    
+}
+
+article {
+    width: 23%;
+    margin: 1%;
+    float: left;
+    box-shadow: 0 0 15px grey;
+    
+}
+
+article > div.cabecera-articulo {
+}
+
+article > div.contenido-articulo {
+    
+}
+
+article > div > h1 {
+}
+
+article > div > h2 {
+    color: #005999;
+    border-bottom: dotted 1px #E5E5E5;
+    padding-left: .5em;
+}
+
+article > div > img {
+   width: 100%;
+}
+
+aside {
+    
+    width: 23%;
+    margin: 1%;
+    float: left;
+    box-shadow: 0 0 15px grey;
+    }
+
+aside h1 {
+    
+}
+
+aside li {
+    
+}
+
+aside li {
+    
+}
+
+aside li::before {
+    
+}
+
+aside li {
+    
+}
+
+footer {
+    
+}

@@ -1,0 +1,24 @@
+#titulo-sitio{
+  font-size: 4em;
+  color: #d39a0a;
+  text-shadow: 1px 1px #bc8609;
+}
+body{
+  background: url('http://www.nestle-family.com/assets/images/recipe-cont-right-img.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+.resumen{
+  border: 1px solid gray;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.cat{
+
+}
+
+.dscr{
+
+}
