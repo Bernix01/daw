@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
 title: Desarrollo de aplicaciones web
 description: DAW 2017-T1 - Espol
+show_dir_listing: true
