@@ -1,0 +1,36 @@
+[
+	{
+		"nombre":"Juan Pérez",
+		"servicios": [
+			{
+				"servicio":"agua potable",
+				"deuda":"210.50"
+			},
+			{
+				"servicio":"energía eléctrica",
+				"deuda":"30"
+			},
+			{
+				"servicio":"telefónica móvil",
+				"deuda":"10.50"
+			}
+		]
+	},
+	{
+		"nombre":"María Mendoza",
+		"servicios": [
+			{
+				"servicio":"agua potable",
+				"deuda":"48.20"
+			},
+			{
+				"servicio":"telefónica fija",
+				"deuda":"10"
+			},
+			{
+				"servicio":"energía eléctrica",
+				"deuda":"20.10"
+			}
+		]
+	}
+]

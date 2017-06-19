@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<root>
+	<servicios>
+		<servicio tipo="agua potable">
+			<nombre>Interagua</nombre>
+			<direccion>Guayaquil 090313</direccion>
+			<telefono>(04) 256-2924</telefono>
+		</servicio>
+		<servicio tipo="energía eléctrica">
+			<nombre>Corporación Nacional de Electricidad CNEL EP</nombre>
+			<direccion>Nahim Isaias y Miguel H. Alcivar. edificio ONYX</direccion>
+			<telefono>(04) 268-3227</telefono>
+		</servicio>
+		<servicio tipo="telefónica fija">
+			<nombre>Corporación Nacional de Telecomunicaciones</nombre>
+			<direccion>Av. 25 de Julio y pío Jaramillo, Avenida Pio jaramillo Alvarado, Guayaquil</direccion>
+			<telefono>(04) 242-0250</telefono>
+		</servicio>
+		<servicio tipo="telefónica móvil">
+			<nombre>Claro</nombre>
+			<direccion>Av. Gregorio Escobedo 1118, Guayaquil 090313</direccion>
+			<telefono>(04) 500-5000</telefono>
+		</servicio>
+	</servicios>
+</root>

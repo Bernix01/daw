@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AJAX + JSON + XML</title>
+
+  <!-- Latest compiled and minified JS -->
+  <script src="//code.jquery.com/jquery.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <ul class="list-group" id="usuarios">
+          <li>asda</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <script>
+    gastos = []
+    servicios_basicos = []
+
+    window.onload = function () {
+      $.getJSON("gastos_personales.json", function (data, status) {
+        //getJSON me retorna un JSON en data
+        if (status == "success") {
+          gastos = data
+          $.get("servicios_basicos.xml", function (data, status) {
+            //data ya tiene el xml parseado
+            if (status == "success") {
+              //recorro usuarios para crear nodos con los listeners
+              servicios_basicos = data
+              for (let i = 0; i < gastos.length; i++) {
+                let item = $("<li></li>")
+                item.text(gastos[i].nombre)
+                item.on("click", function () {
+                  for (let j = 0; j < gastos.length; j++) {
+                    let gasto = gastos[j]
+                    if ($(this).text() == gasto.nombre) {
+                      let deudaTotal = 0
+                      let txt = ""
+                      console.log(deudaTotal)
+                      for (let k = 0; k < gasto.servicios.length; k++) {
+                        let targ = gasto.servicios[k].servicio
+                        let _txt = "<h2>"+targ+"($"+gasto.servicios[k].deuda+")</h2>"+serviceToHTML(findService($(servicios_basicos).find("servicios"), targ))
+                        deudaTotal += parseFloat(gasto.servicios[k].deuda)
+                        txt += _txt
+                        console.log(deudaTotal,targ)
+                      }
+                      $(this).append(txt)
+                      $(this).append($("<p><br/><strong>Deuda total:</strong> $" + deudaTotal + "</p>"))
+                      return
+                    }
+                  }
+                })
+                console.log(item)
+                $("#usuarios").append(item)
+              }
+            } else
+              alert(">:( error al leer los servicios basicos")
+          })
+        } else
+          alert(":( error al leer los gastos personales!")
+      })
+    }
+
+    //service es un nodo <servicio>
+    function serviceToHTML(service) {
+      return "<h3>" + service.find("nombre").text() + "<h3><p>" + service.find("direccion").text() + "<br/>" + service.find(
+        "telefono").text() + "</p>"
+    }
+
+    //funcion para buscar un servicio en específico 
+    function findService(services, servicename) {
+      console.log(services, servicename, "params")
+      return $(services).find('servicio[tipo="' + servicename + '"]')
+      /*for (let j = 0; j < services.length; j++) {
+        console.log("asdasd", services[j], services[j].getAttribute("tipo"), servicename)
+        if (services[j].getAttribute("tipo") == servicename)
+          return services[j]
+      }
+      return null*/
+    }
+  </script>
+</body>
+
+</html>
